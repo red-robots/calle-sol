@@ -12,7 +12,7 @@
 			//get_template_part( 'parts/content', 'page' );
 			$hero = get_field('hero_image');
 
-		wp_reset_postdata();
+		
 		?>
 
 		<div class="hero">
@@ -25,8 +25,9 @@
 		<div class="diamonds"></div>
 	</main><!-- #main -->
 	<section class="brown">
-		
+		<?php the_content(); ?>
 	</section>
 </div><!-- #primary -->
 <?php
+wp_reset_postdata();
 get_footer();
