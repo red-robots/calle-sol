@@ -1,0 +1,272 @@
+div,h1,h2,h3,h4,h5,h6,p,li,a,span,strong {
+	overflow-wrap: normal;
+    word-wrap: normal;
+    -ms-word-break: normal;
+    word-break: normal;
+    word-break: normal;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+    page-break-inside: avoid;
+}
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+pre {
+	font-family: $font_pre;
+	font-size: 13px;
+	line-height: 1.3;
+}
+.cf:before, .cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+.text-center {text-align:center;}
+
+/* Text meant only for screen readers. */
+.sr {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	&:focus {
+		background-color: #333;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #FFF;
+		display: block;
+		@include font-size(0.875);
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+body {
+	background: {
+		image: url(images/header-background.jpg);
+		position: top left;
+		repeat: no-repeat;
+		size: cover;
+	}
+
+}
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.relative {position: relative;}
+.logo, h1.logo {
+	width: 250px;
+	margin: 20px auto;
+	@include tab {
+		float: left;
+		margin: 0;
+	}
+	a {
+		width: 250px;
+		display: block;
+	}
+	img {
+		width: 100%;
+	}
+}
+header.site-header {
+	width: 100%;
+	position: relative;
+	@include tab {
+		
+	}
+	.wrapper {
+		@include tab {
+			padding: 60px 0 0 0;
+		}
+	}
+	
+	.order-n-delivery {
+		width: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-top: 8px;
+		a {
+			background-color: $color-red;
+			color: #fff;
+			padding: 8px 20px;
+			text-align: center;
+			border-radius: 0 0 5px 5px;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+}
+main.home {
+	min-height: 500px;
+	.hero {
+		width: 100%;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+}
+main#main {
+	width: 100%;
+	position: relative;
+	.diamonds {
+		height: 30px;
+		width: 100%;
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		background: {
+			image: url(images/diamonds.png);
+			repeat: repeat-x;
+			size: 30px 100%;
+		}
+	}
+}
+.site-content {
+
+}
+footer.site-footer {
+	width: 100%;
+	clear: both;
+}
+.foot-addy {
+	width: 100%;
+	float: left;
+	text-align: center;
+	background-color: $color-yellow;
+	padding: 20px 0;
+	color: $color-blue;
+	font-size: 18px;
+	.flex {
+		@include tab {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+.social {
+	@include tab {
+		margin-left: 20px;
+	}
+	a {
+		color: $color-blue;
+		text-decoration: none;
+		font-size: 25px;
+		margin: 0 10px;
+	}
+}
+.foot-message {
+	font-size: 12px;
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+}
+.fs-logos {
+	width: 100%;
+	float: left;
+	background-color: $color-blue;
+	color: #fff;
+	text-align: center;
+	padding: 40px 0;
+}
+.footlogos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	float: left;
+	a {
+		width: 100px;
+		display: inline-block;
+		margin: 0 20px;
+		img {
+			width: 100%;
+		}
+	}
+	img {
+		width: 100px;
+		margin: 0 20px;
+	}
+}
+nav.main-navigation {
+	width: 50%;
+	float: right;
+	
+	@include tab {
+
+	}
+	@include mid {
+		width: 650px
+	}
+	@include desk {
+		width: 750px
+	}
+	.desktop {
+		display: none;
+		@include tab {
+			display: block;
+			width: 100%;
+		}
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+	}
+	li {
+		width: auto;
+		display: inline-block;
+		margin: 0 10px;
+		align-items: flex-end;
+		// float: right;
+		text-transform: uppercase;
+		font-size: 14px;
+		a {
+			text-decoration: none;
+			color: $color-blue;
+			font-weight: bold;
+			padding: 10px;
+		}
+		&:last-child {
+			margin: 0 0 0 10px;
+			a {
+				padding: 10px 0 10px 10px;
+			}
+		}
+	}
+	
+}
+section.brown {
+	width: 100%;
+	float: left;
+	background: {
+		image: url(images/brown-background.jpg);
+		background-repeat: no-repeat;
+		size: cover;
+	}
+}
