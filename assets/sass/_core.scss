@@ -178,10 +178,10 @@ footer.site-footer {
 	}
 }
 .foot-message {
-	font-size: 12px;
+	font-size: 14px;
 	width: 100%;
 	float: left;
-	padding: 20px 0;
+	padding: 0 0 20px 0;
 }
 .fs-logos {
 	width: 100%;
@@ -199,17 +199,25 @@ footer.site-footer {
 	align-items: center;
 	width: 100%;
 	float: left;
+	@include tab {
+
+	}
+	@include desk {
+		width: 50%;
+		margin: 0 auto;
+		float: none;
+	}
 	a {
-		width: 100px;
+		// width: 100px;
 		display: inline-block;
-		margin: 0 20px;
+		margin: 0 ;
 		img {
 			width: 100%;
 		}
 	}
 	img {
-		width: 100px;
-		margin: 0 20px;
+		// width: 100px;
+		margin: 0 ;
 	}
 }
 nav.main-navigation {

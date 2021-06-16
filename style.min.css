@@ -1338,12 +1338,12 @@ main#main .diamonds{height:30px;width:100%;position:absolute;bottom:-15px;left:0
 footer.site-footer{width:100%;clear:both}
 .foot-addy{width:100%;float:left;text-align:center;background-color:#fff1ab;padding:20px 0;color:#007ea5;font-size:18px}
 .social a{color:#007ea5;text-decoration:none;font-size:25px;margin:0 10px}
-.foot-message{font-size:12px;width:100%;float:left;padding:20px 0}
+.foot-message{font-size:14px;width:100%;float:left;padding:0 0 20px 0}
 .fs-logos{width:100%;float:left;background-color:#007ea5;color:#fff;text-align:center;padding:40px 0}
 .footlogos{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;float:left}
-.footlogos a{width:100px;display:inline-block;margin:0 20px}
+.footlogos a{display:inline-block;margin:0}
 .footlogos a img{width:100%}
-.footlogos img{width:100px;margin:0 20px}
+.footlogos img{margin:0}
 nav.main-navigation{width:50%;float:right}
 nav.main-navigation .desktop{display:none}
 nav.main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
@@ -1362,7 +1362,8 @@ header.site-header .wrapper{padding:60px 0 0 0}
 nav.main-navigation .desktop{display:block;width:100%}
 }@media(min-width:667px){nav.mobilemenu{padding:120px 90px 70px 90px}
 }@media(min-width:900px){nav.main-navigation{width:650px}
-}@media(min-width:1200px){nav.main-navigation{width:750px}
+}@media(min-width:1200px){.footlogos{width:50%;margin:0 auto;float:none}
+nav.main-navigation{width:750px}
 }@media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
