@@ -26,6 +26,25 @@
 	</main><!-- #main -->
 	<section class="brown">
 		<?php the_content(); ?>
+		
+		<div class="special-wrap">
+			<div class="special-widget">
+				
+				<div class="right">
+					<div class="blue-title">
+						Lorem Ipsum dolor
+					</div>
+					<div class="right-right">
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+						</div>
+						<div class="btn">
+							<a href="#">Go To Menu</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </div><!-- #primary -->
 <?php

@@ -21,7 +21,7 @@
 	<header id="masthead" class="site-header " role="banner">
 		<div class="wrapper relative">
 
-			<div class="order-n-delivery">
+			<div class="order-n-delivery desk">
 				<a href="">
 					Order & Delivery
 				</a>
@@ -43,6 +43,14 @@
 
 
 	        <?php get_template_part('inc/nav'); ?>
+
+			<div class="center">
+		        <div class="order-n-delivery mobile">
+					<a href="">
+						Order & Delivery
+					</a>
+				</div>
+			</div>
 			
 	</div><!-- wrapper -->
 	</header><!-- #masthead -->

@@ -236,7 +236,13 @@ body.home {
 ========================================== */
 
 nav.mobilemenu {
-  background-color: $color-yellow;
+  // background-color: $color-yellow;
+  background: {
+    image: url(images/header-background.jpg);
+    position: top left;
+    repeat: no-repeat;
+    size: cover;
+  }
   position: fixed;
   z-index: 9;
   top: 0;
@@ -249,6 +255,8 @@ nav.mobilemenu {
   z-index: 100001;
   @include transform(translateX(100%));
   @include transition(transform .55s cubic-bezier(0.785, 0.135, 0.15, 0.86));
+  font-family: $stratum;
+  font-weight: bold;
   @media screen and (min-width: $tabwidth) {
   	display: none;
   }

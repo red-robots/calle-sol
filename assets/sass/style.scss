@@ -35,7 +35,24 @@ $arvo: 'Arvo', serif;
 	font-weight: 700;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: stratum;
+	// font-weight: 700;
+	font-style: normal;
+	src: url("fonts/StratumNo2-Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: windsor;
+	// font-weight: 700;
+	font-style: normal;
+	src: url("fonts/windsor.otf") format("opentype");
+}
+@font-face {
+	font-family: windsor-bold;
+	// font-weight: 700;
+	font-style: normal;
+	src: url("fonts/windsor-bold.otf") format("opentype");
+}
 
 @import "normalize";
 @import "bourbon/bourbon";

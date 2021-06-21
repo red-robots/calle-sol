@@ -21,6 +21,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */@font-face{font-family:futura-pt,sans-serif;font-weight:400;font-style:normal}
 @font-face{font-family:futura-pt-condensed,sans-serif;font-weight:400;font-style:normal}
 @font-face{font-family:futura-pt-condensed,sans-serif;font-weight:700;font-style:normal}
+@font-face{font-family:stratum;font-style:normal;src:url("fonts/StratumNo2-Medium.otf") format("opentype")}
+@font-face{font-family:windsor;font-style:normal;src:url("fonts/windsor.otf") format("opentype")}
+@font-face{font-family:windsor-bold;font-style:normal;src:url("fonts/windsor-bold.otf") format("opentype")}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
@@ -1271,7 +1274,7 @@ body.home .burger.clicked span:before,body.home .burger.clicked span:after{backg
 .burger.clicked span::after{-webkit-transform:translateY(-9px) rotate(-45deg);transform:translateY(-9px) rotate(-45deg)}
 .burger.clicked span:before,.burger.clicked span:after{background-color:#fff}
 .burger:hover{cursor:pointer}
-nav.mobilemenu{background-color:#fff1ab;position:fixed;z-index:9;top:0;right:0;height:100%;max-width:515px;width:100%;padding:100px 40px 60px 40px;overflow-y:auto;z-index:100001;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:transform .55s cubic-bezier(0.785,0.135,0.15,0.86);-webkit-transition:-webkit-transform .55s cubic-bezier(0.785,0.135,0.15,0.86);transition:-webkit-transform .55s cubic-bezier(0.785,0.135,0.15,0.86);transition:transform .55s cubic-bezier(0.785,0.135,0.15,0.86);transition:transform .55s cubic-bezier(0.785,0.135,0.15,0.86),-webkit-transform .55s cubic-bezier(0.785,0.135,0.15,0.86)}
+nav.mobilemenu{background-image:url(images/header-background.jpg);background-position:top left;background-repeat:no-repeat;background-size:cover;position:fixed;z-index:9;top:0;right:0;height:100%;max-width:515px;width:100%;padding:100px 40px 60px 40px;overflow-y:auto;z-index:100001;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:transform .55s cubic-bezier(0.785,0.135,0.15,0.86);-webkit-transition:-webkit-transform .55s cubic-bezier(0.785,0.135,0.15,0.86);transition:-webkit-transform .55s cubic-bezier(0.785,0.135,0.15,0.86);transition:transform .55s cubic-bezier(0.785,0.135,0.15,0.86);transition:transform .55s cubic-bezier(0.785,0.135,0.15,0.86),-webkit-transform .55s cubic-bezier(0.785,0.135,0.15,0.86);font-family:"stratum",sans-serif;font-weight:bold}
 nav.mobilemenu li{list-style:none;margin:0 0 15px 0}
 nav.mobilemenu a{color:#007ea5;font-size:30px;font-weight:bold;text-decoration:none}
 nav.mobilemenu.show{-webkit-transform:translateX(0);transform:translateX(0)}
@@ -1321,22 +1324,24 @@ pre{font-family:"Courier 10 Pitch",Courier,monospace;font-size:13px;line-height:
 .text-center{text-align:center}
 .sr{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
 .sr:focus{background-color:#333;border-radius:3px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,0.6);box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;color:#FFF;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
-body{background-image:url(images/header-background.jpg);background-position:top left;background-repeat:no-repeat;background-size:cover}
+body{font-family:"futura-pt",sans-serif;background-image:url(images/header-background.jpg);background-position:top left;background-repeat:no-repeat;background-size:cover}
 .wrapper{max-width:1200px;width:100%;margin:0 auto;padding-left:20px;padding-right:20px}
 .relative{position:relative}
 .logo,h1.logo{width:250px;margin:20px auto}
 .logo a,h1.logo a{width:250px;display:block}
 .logo img,h1.logo img{width:100%}
+.center{text-align:center}
 header.site-header{width:100%;position:relative}
-header.site-header .order-n-delivery{width:auto;position:absolute;top:0;right:0;padding-top:8px}
-header.site-header .order-n-delivery a{background-color:#f24c2e;color:#fff;padding:8px 20px;text-align:center;border-radius:0 0 5px 5px;text-transform:uppercase;text-decoration:none}
-main.home{min-height:500px}
+header.site-header .order-n-delivery{width:auto;font-family:"windsor-bold",sans-serif;letter-spacing:1px}
+header.site-header .order-n-delivery a{background-color:#f24c2e;color:#fff;padding:8px 20px;text-align:center;border-radius:5px;text-transform:uppercase;text-decoration:none}
+header.site-header .order-n-delivery.desk{display:none}
+header.site-header .order-n-delivery.mobile{margin:20px auto;display:inline-block}
 main.home .hero{width:100%;margin:0 auto}
 main.home .hero img{width:100%}
 main#main{width:100%;position:relative}
 main#main .diamonds{height:30px;width:100%;position:absolute;bottom:-15px;left:0;background-image:url(images/diamonds.png);background-repeat:repeat-x;background-size:30px 100%}
 footer.site-footer{width:100%;clear:both}
-.foot-addy{width:100%;float:left;text-align:center;background-color:#fff1ab;padding:20px 0;color:#007ea5;font-size:18px}
+.foot-addy{width:100%;float:left;text-align:center;background-color:#fff1ab;padding:10px 0;color:#007ea5;font-size:18px}
 .social a{color:#007ea5;text-decoration:none;font-size:25px;margin:0 10px}
 .foot-message{font-size:14px;width:100%;float:left;padding:0 0 20px 0}
 .fs-logos{width:100%;float:left;background-color:#007ea5;color:#fff;text-align:center;padding:40px 0}
@@ -1344,7 +1349,7 @@ footer.site-footer{width:100%;clear:both}
 .footlogos a{display:inline-block;margin:0}
 .footlogos a img{width:100%}
 .footlogos img{margin:0}
-nav.main-navigation{width:50%;float:right}
+nav.main-navigation{width:50%;float:right;font-family:"stratum",sans-serif;font-weight:bold}
 nav.main-navigation .desktop{display:none}
 nav.main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 nav.main-navigation li{width:auto;display:inline-block;margin:0 10px;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;text-transform:uppercase;font-size:14px}
@@ -1352,18 +1357,34 @@ nav.main-navigation li a{text-decoration:none;color:#007ea5;font-weight:bold;pad
 nav.main-navigation li:last-child{margin:0 0 0 10px}
 nav.main-navigation li:last-child a{padding:10px 0 10px 10px}
 section.brown{width:100%;float:left;background-image:url(images/brown-background.jpg);background-background-repeat:no-repeat;background-size:cover}
+.siteby{width:100%;float:left;text-align:center;padding:30px 0 10px 0;font-size:12px;color:rgba(255,255,255,0.5)}
+.siteby a{text-decoration:none;color:rgba(255,255,255,0.7)}
+.btn{width:auto;text-align:center;margin:20px 0;display:inline-block}
+.btn a{padding:10px 20px;background-color:#007ea5;color:#fff;display:block;border-radius:5px;text-decoration:none;text-transform:uppercase;-webkit-transition:all ease .3s;transition:all ease .3s}
+.btn a:hover{-webkit-box-shadow:0 2px 28px 6px rgba(255,255,255,0.96);box-shadow:0 2px 28px 6px rgba(255,255,255,0.96)}
+.btn.left{float:left}
+.special-wrap{width:90%;margin:0 auto}
+.special-widget{background-color:#fff;border-radius:0 0 10px 10px;width:100%;float:left;padding:0 20px 20px 20px;margin:20px auto 40px auto;-webkit-box-shadow:-2px 5px 5px -4px rgba(0,0,0,0.5);box-shadow:-2px 5px 5px -4px rgba(0,0,0,0.5)}
+.special-widget .blue-title{background-color:#007ea5;color:#fff1ab;font-family:"windsor-bold",sans-serif;font-size:50px;position:absolute;top:-20px;left:-20px;padding:20px;border-radius:10px;width:32%;-webkit-transform:rotate(-5deg);transform:rotate(-5deg);line-height:1;text-transform:uppercase;letter-spacing:3px}
+.special-widget .right{width:98%;float:right;position:relative;background-color:#b5e0dc;color:#007ea5;margin-top:-15px;padding-top:20px;border-radius:0 0 10px 10px}
+.special-widget .right .right-right{width:65%;float:right}
 @media screen and (min-width:600px){#cboxTitle{position:absolute;top:0;left:0;text-align:left;width:20%;font-weight:bold;color:#fff;padding:8% 2% 8% 2%;line-height:1.3;font-size:20px}
 .burger{display:none}
 nav.mobilemenu{display:none}
 }@media(min-width:600px){.logo,h1.logo{float:left;margin:0}
 header.site-header .wrapper{padding:60px 0 0 0}
+header.site-header .order-n-delivery.desk{display:block;position:absolute;top:0;right:0;border-radius:0 0 5px 5px}
+header.site-header .order-n-delivery.mobile{display:none}
 .foot-addy .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .social{margin-left:20px}
 nav.main-navigation .desktop{display:block;width:100%}
+.special-wrap{width:80%}
 }@media(min-width:667px){nav.mobilemenu{padding:120px 90px 70px 90px}
-}@media(min-width:900px){nav.main-navigation{width:650px}
+}@media(min-width:900px){main.home{min-height:500px}
+nav.main-navigation{width:650px}
 }@media(min-width:1200px){.footlogos{width:50%;margin:0 auto;float:none}
 nav.main-navigation{width:750px}
+.special-wrap{width:50%}
 }@media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
