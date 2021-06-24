@@ -13,7 +13,7 @@
 
 <?php 
 wp_head(); 
-$ordDeli = get_field('order_delivery', 'option');
+$ordDeli = get_field('order_&_delivery', 'option');
 ?>
 </head>
 
