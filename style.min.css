@@ -1362,8 +1362,9 @@ nav.main-navigation li a{text-decoration:none;color:#007ea5;font-weight:bold;pad
 nav.main-navigation li a:hover{-webkit-box-shadow:0 2px 28px 6px rgba(255,255,255,0.96);box-shadow:0 2px 28px 6px rgba(255,255,255,0.96)}
 nav.main-navigation li:last-child{margin:0 0 0 10px}
 nav.main-navigation li:last-child a{padding:10px 0 10px 10px}
-section.brown{width:100%;float:left;background-image:url(images/brown-background.jpg);background-background-repeat:no-repeat;background-size:cover}
-section.brown.page{padding:100px 0 50px 0;clear:both}
+section.brown{width:100%;float:left;background-image:url(images/brown-background.jpg);background-repeat:no-repeat;background-size:cover}
+section.brown.page{padding:100px 0 80px 0;clear:both}
+section.brown.home{padding:100px 0 80px 0;clear:both}
 .siteby{width:100%;float:left;text-align:center;padding:30px 0 10px 0;font-size:12px;color:rgba(255,255,255,0.5)}
 .siteby a{text-decoration:none;color:rgba(255,255,255,0.7)}
 .btn{width:auto;text-align:center;margin:20px 0;display:inline-block}

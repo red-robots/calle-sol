@@ -334,11 +334,15 @@ section.brown {
 	float: left;
 	background: {
 		image: url(images/brown-background.jpg);
-		background-repeat: no-repeat;
+		repeat: no-repeat;
 		size: cover;
 	}
 	&.page {
-		padding: 100px 0 50px 0;
+		padding: 100px 0 80px 0;
+		clear: both;
+	}
+	&.home {
+		padding: 100px 0 80px 0;
 		clear: both;
 	}
 }

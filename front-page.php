@@ -31,7 +31,7 @@
 		</div>
 		<div class="diamonds"></div>
 	</main><!-- #main -->
-	<section class="brown">
+	<section class="brown home">
 		<?php the_content(); 
 		// echo '</pre>';
 		// 	print_r($newTab);
