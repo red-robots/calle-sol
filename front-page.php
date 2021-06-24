@@ -11,6 +11,13 @@
 
 			//get_template_part( 'parts/content', 'page' );
 			$hero = get_field('hero_image');
+			$blue_title = get_field('blue_title');
+			$description = get_field('description');
+			$link = get_field('link');
+			$link_text = get_field('link_text');
+			$newTab = get_field('open_in_new_tab');
+
+
 
 		
 		?>
@@ -25,22 +32,30 @@
 		<div class="diamonds"></div>
 	</main><!-- #main -->
 	<section class="brown">
-		<?php the_content(); ?>
+		<?php the_content(); 
+		// echo '</pre>';
+		// 	print_r($newTab);
+		// 	echo '</pre>';
+			?>
 		
 		<div class="special-wrap">
 			<div class="special-widget">
 				
 				<div class="right">
-					<div class="blue-title">
-						Lorem Ipsum dolor
-					</div>
+					<?php if( $blue_title ) { ?>
+						<div class="blue-title">
+							<?php echo $blue_title; ?>
+						</div>
+					<?php } ?>
 					<div class="right-right">
-						<div class="text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-						</div>
-						<div class="btn">
-							<a href="#">Go To Menu</a>
-						</div>
+						<?php if( $description ) { ?>
+							<div class="text"><?php echo $description; ?></div>
+						<?php } ?>
+						<?php if( $link_text && $link ) { ?>
+							<div class="btn">
+								<a href="<?php echo $link; ?>" <?php if($newTab){ echo 'target="_blank"';} ?>><?php echo $link_text; ?></a>
+							</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>

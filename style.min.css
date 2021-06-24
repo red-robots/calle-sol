@@ -1331,7 +1331,7 @@ body{font-family:"futura-pt",sans-serif;background-image:url(images/header-backg
 .logo a,h1.logo a{width:250px;display:block}
 .logo img,h1.logo img{width:100%}
 .center{text-align:center}
-header.site-header{width:100%;position:relative}
+header.site-header{width:100%;position:relative;float:left}
 header.site-header .order-n-delivery{width:auto;font-family:"windsor-bold",sans-serif;letter-spacing:1px}
 header.site-header .order-n-delivery a{background-color:#f24c2e;color:#fff;padding:8px 20px;text-align:center;border-radius:5px;text-transform:uppercase;text-decoration:none}
 header.site-header .order-n-delivery.desk{display:none}
@@ -1340,6 +1340,11 @@ main.home .hero{width:100%;margin:0 auto}
 main.home .hero img{width:100%}
 main#main{width:100%;position:relative}
 main#main .diamonds{height:30px;width:100%;position:absolute;bottom:-15px;left:0;background-image:url(images/diamonds.png);background-repeat:repeat-x;background-size:30px 100%}
+.site-content{width:100%;float:left}
+body.page .site-header{padding-bottom:80px}
+body.home .site-header{padding-bottom:0}
+article.page{text-align:center}
+article.page header.entry-header{font-family:"windsor",sans-serif;text-transform:uppercase;color:#007ea5;font-size:22px}
 footer.site-footer{width:100%;clear:both}
 .foot-addy{width:100%;float:left;text-align:center;background-color:#fff1ab;padding:10px 0;color:#007ea5;font-size:18px}
 .social a{color:#007ea5;text-decoration:none;font-size:25px;margin:0 10px}
@@ -1349,14 +1354,16 @@ footer.site-footer{width:100%;clear:both}
 .footlogos a{display:inline-block;margin:0}
 .footlogos a img{width:100%}
 .footlogos img{margin:0}
-nav.main-navigation{width:50%;float:right;font-family:"stratum",sans-serif;font-weight:bold}
+nav.main-navigation{width:50%;float:right;font-family:"stratum",sans-serif;font-weight:bold;position:relative;z-index:10000}
 nav.main-navigation .desktop{display:none}
 nav.main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 nav.main-navigation li{width:auto;display:inline-block;margin:0 10px;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;text-transform:uppercase;font-size:14px}
-nav.main-navigation li a{text-decoration:none;color:#007ea5;font-weight:bold;padding:10px}
+nav.main-navigation li a{text-decoration:none;color:#007ea5;font-weight:bold;padding:10px;display:block;-webkit-transition:all ease .3s;transition:all ease .3s}
+nav.main-navigation li a:hover{-webkit-box-shadow:0 2px 28px 6px rgba(255,255,255,0.96);box-shadow:0 2px 28px 6px rgba(255,255,255,0.96)}
 nav.main-navigation li:last-child{margin:0 0 0 10px}
 nav.main-navigation li:last-child a{padding:10px 0 10px 10px}
 section.brown{width:100%;float:left;background-image:url(images/brown-background.jpg);background-background-repeat:no-repeat;background-size:cover}
+section.brown.page{padding:100px 0 50px 0;clear:both}
 .siteby{width:100%;float:left;text-align:center;padding:30px 0 10px 0;font-size:12px;color:rgba(255,255,255,0.5)}
 .siteby a{text-decoration:none;color:rgba(255,255,255,0.7)}
 .btn{width:auto;text-align:center;margin:20px 0;display:inline-block}

@@ -11,7 +11,10 @@
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>
 
 
-<?php wp_head(); ?>
+<?php 
+wp_head(); 
+$ordDeli = get_field('order_delivery', 'option');
+?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,13 +47,15 @@
 
 	        <?php get_template_part('inc/nav'); ?>
 
-			<div class="center">
-		        <div class="order-n-delivery mobile">
-					<a href="">
-						Order & Delivery
-					</a>
+			<?php if( $ordDeli ) { ?>
+				<div class="center">
+			        <div class="order-n-delivery mobile">
+						<a href="<?php echo $ordDeli; ?>">
+							Order & Delivery
+						</a>
+					</div>
 				</div>
-			</div>
+			<?php } ?>
 			
 	</div><!-- wrapper -->
 	</header><!-- #masthead -->

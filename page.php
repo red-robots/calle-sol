@@ -14,23 +14,26 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area-full">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="wrapper">
+			<section class="brown page">
+				<div class="wrapper">
 
-				<?php
-				while ( have_posts() ) : the_post();
+					<?php
+					while ( have_posts() ) : the_post();
 
-					get_template_part( 'parts/content', 'page' );
+						get_template_part( 'parts/content', 'page' );
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
 
-				endwhile; // End of the loop.
-				?>
-			</div>
+					endwhile; // End of the loop.
+					?>
+				</div>
+			</section>
+			<div class="diamonds"></div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -6,7 +6,7 @@
 	$phone = get_field("phone","option");
 	$fMessage = get_field("message","option");
 	//$email = get_field("email","option");
-	$contacts = array($address,$phone,$fax,$email);
+	// $contacts = array($address,$phone,$fax,$email);
 	$facebook = get_field("facebook","option");
 	$twitter = get_field("twitter","option");
 	$instagram = get_field("instagram","option");
