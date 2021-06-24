@@ -24,11 +24,13 @@ $ordDeli = get_field('order_delivery', 'option');
 	<header id="masthead" class="site-header " role="banner">
 		<div class="wrapper relative">
 
-			<div class="order-n-delivery desk">
-				<a href="">
-					Order & Delivery
-				</a>
-			</div>
+			<?php if( $ordDeli ) { ?>
+				<div class="order-n-delivery desk">
+					<a href="<?php echo $ordDeli; ?>">
+						Order & Delivery
+					</a>
+				</div>
+			<?php } ?>
 			
 			<?php if( is_front_page() ) { ?>
 	             <h1 class="logo">
