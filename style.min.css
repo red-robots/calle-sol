@@ -1396,7 +1396,7 @@ nav.main-navigation{width:650px;margin-top:20px}
 }@media(min-width:1200px){.logo,h1.logo{width:325px}
 .logo a,h1.logo a{width:325px}
 .footlogos{width:50%;margin:0 auto;float:none}
-nav.main-navigation{margin-top:40px}
+nav.main-navigation{margin-top:40px;width:750px}
 .special-wrap{width:50%}
 }@media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
