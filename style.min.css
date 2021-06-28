@@ -1382,7 +1382,7 @@ section.brown.home{padding:100px 0 80px 0;clear:both}
 .burger{display:none}
 nav.mobilemenu{display:none}
 }@media(min-width:600px){.logo,h1.logo{float:left;margin:0}
-header.site-header .wrapper{padding:60px 0 0 0}
+header.site-header .wrapper{padding:20px 0 0 0}
 header.site-header .order-rez-wrap.desk{display:block;position:absolute;top:0;right:0;border-radius:0 0 5px 5px;width:50%}
 header.site-header .order-rez-wrap.mobile{display:none}
 header.site-header .order-n-delivery{float:right;margin-left:10px}
@@ -1392,9 +1392,11 @@ nav.main-navigation .desktop{display:block;width:100%}
 .special-wrap{width:80%}
 }@media(min-width:667px){nav.mobilemenu{padding:120px 90px 70px 90px}
 }@media(min-width:900px){main.home{min-height:500px}
-nav.main-navigation{width:650px}
-}@media(min-width:1200px){.footlogos{width:50%;margin:0 auto;float:none}
-nav.main-navigation{width:750px}
+nav.main-navigation{width:650px;margin-top:20px}
+}@media(min-width:1200px){.logo,h1.logo{width:325px}
+.logo a,h1.logo a{width:325px}
+.footlogos{width:50%;margin:0 auto;float:none}
+nav.main-navigation{margin-top:40px}
 .special-wrap{width:50%}
 }@media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}

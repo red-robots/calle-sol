@@ -79,9 +79,15 @@ body {
 		float: left;
 		margin: 0;
 	}
+	@include desk {
+		width: 325px;
+	}
 	a {
 		width: 250px;
 		display: block;
+		@include desk {
+			width: 325px;
+		}
 	}
 	img {
 		width: 100%;
@@ -99,7 +105,7 @@ header.site-header {
 	}
 	.wrapper {
 		@include tab {
-			padding: 60px 0 0 0;
+			padding: 20px 0 0 0;
 		}
 	}
 	.order-rez-wrap {
@@ -301,10 +307,11 @@ nav.main-navigation {
 
 	}
 	@include mid {
-		width: 650px
+		width: 650px;
+		margin-top: 20px;
 	}
 	@include desk {
-		width: 750px
+		margin-top: 40px;
 	}
 	.desktop {
 		display: none;

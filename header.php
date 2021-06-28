@@ -40,7 +40,7 @@ $rezText = get_field('reservations_text', 'option');
 						</a>
 					</div>
 				<?php } ?>
-				<?php if( $ordDeli ) { ?>
+				<?php if( $rezLink ) { ?>
 					<div class="order-n-delivery">
 						<a href="<?php echo $rezLink; ?>" id="resyButton-EzBNcMKpKKfTgMDkZLr6S" >
 							<?php echo $rezText; ?>
@@ -76,7 +76,7 @@ $rezText = get_field('reservations_text', 'option');
 						</div>
 					</div>
 				<?php } ?>
-				<?php if( $ordDeli ) { ?>
+				<?php if( $rezLink ) { ?>
 					<div class="center">
 				        <div class="order-n-delivery">
 							<a href="<?php echo $rezLink; ?>" id="resyButton-EzBNcMKpKKfTgMDkZLr6S" >
