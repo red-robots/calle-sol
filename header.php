@@ -22,6 +22,12 @@ $ordDeli = get_field('order_&_delivery', 'option');
 $ordDeliText = get_field('order_text', 'option');
 $rezLink = get_field('reservations_link', 'option');
 $rezText = get_field('reservations_text', 'option');
+$order = get_field('order', 'option');
+
+// echo '<pre>';
+// print_r($order);
+// echo '</pre>';
+
 ?>
 </head>
 
@@ -33,16 +39,30 @@ $rezText = get_field('reservations_text', 'option');
 		<div class="wrapper relative">
 
 			<div class="order-rez-wrap desk">
-				<?php if( $ordDeli ) { ?>
+				
+				<?php if( $order ) { ?>
 					<div class="order-n-delivery ">
-						<a href="<?php echo $ordDeli; ?>">
-							<?php echo $ordDeliText; ?>
+						<a class="first" href="#">
+							Order
 						</a>
+						<div class="dropdown">
+							<?php foreach( $order as $o ) { ?>
+								<div class="drop">
+									<a href="<?php echo $o['link']; ?>">
+										<div class="img">
+											<img src="<?php echo $o['logo']['url']; ?>">
+										</div>
+										<div class="tesxt"><?php echo $o['text']; ?></div>
+									</a>
+								</div>
+							<?php } ?>
+						</div>
 					</div>
 				<?php } ?>
+
 				<?php if( $rezLink ) { ?>
 					<div class="order-n-delivery">
-						<a href="<?php echo $rezLink; ?>" id="resyButton-EzBNcMKpKKfTgMDkZLr6S" >
+						<a class="first" href="<?php echo $rezLink; ?>" id="resyButton-EzBNcMKpKKfTgMDkZLr6S" >
 							<?php echo $rezText; ?>
 						</a>
 					</div>
@@ -67,24 +87,37 @@ $rezText = get_field('reservations_text', 'option');
 	        <?php get_template_part('inc/nav'); ?>
 
 			<div class="order-rez-wrap mobile">
-				<?php if( $ordDeli ) { ?>
-					<div class="center">
-				        <div class="order-n-delivery">
-							<a href="<?php echo $ordDeli; ?>">
-								<?php echo $ordDeliText; ?>
-							</a>
-						</div>
-					</div>
-				<?php } ?>
 				<?php if( $rezLink ) { ?>
 					<div class="center">
 				        <div class="order-n-delivery">
-							<a href="<?php echo $rezLink; ?>" id="resyButton-EzBNcMKpKKfTgMDkZLr6S" >
+							<a  class="first" href="<?php echo $rezLink; ?>" id="resyButton-EzBNcMKpKKfTgMDkZLr6S" >
 								<?php echo $rezText; ?>
 							</a>
 						</div>
 					</div>
 				<?php } ?>
+				<?php if( $order ) { ?>
+					<div class="center">
+						<div class="order-n-delivery ">
+							<a class="first" href="#">
+								Order
+							</a>
+							<div class="dropdown">
+								<?php foreach( $order as $o ) { ?>
+									<div class="drop">
+										<a href="<?php echo $o['link']; ?>">
+											<div class="img">
+												<img src="<?php echo $o['logo']['url']; ?>">
+											</div>
+											<div class="tesxt"><?php echo $o['text']; ?></div>
+										</a>
+									</div>
+								<?php } ?>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+				
 			</div>
 			
 	</div><!-- wrapper -->
