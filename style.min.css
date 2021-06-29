@@ -1393,7 +1393,7 @@ header.site-header .wrapper{padding:20px 0 0 0}
 header.site-header .order-rez-wrap.desk{display:block;position:absolute;top:0;right:0;border-radius:0 0 5px 5px;width:50%}
 header.site-header .order-rez-wrap.mobile{display:none}
 header.site-header .order-n-delivery{float:right;margin-left:10px}
-header.site-header .dropdown{position:absolute;top:25px;right:0}
+header.site-header .dropdown{position:absolute;top:25px;right:0;width:300px}
 .foot-addy .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .social{margin-left:20px}
 nav.main-navigation .desktop{display:block;width:100%}
