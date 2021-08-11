@@ -1355,10 +1355,12 @@ body.home .site-header{padding-bottom:0}
 article.page{text-align:center}
 article.page header.entry-header{font-family:"windsor",sans-serif;text-transform:uppercase;color:#007ea5;font-size:22px}
 footer.site-footer{width:100%;clear:both}
-.foot-addy{width:100%;float:left;text-align:center;background-color:#fff1ab;padding:10px 0;color:#007ea5;font-size:18px}
+.foot-addy{width:100%;float:left;text-align:center;background-color:#fff1ab;padding:10px;color:#007ea5;font-size:18px}
+.foot-addy .address{word-break:keep-all}
+.social{padding:10px 0}
 .social a{color:#007ea5;text-decoration:none;font-size:25px;margin:0 10px}
 .foot-message{font-size:14px;width:100%;float:left;padding:0 0 20px 0}
-.fs-logos{width:100%;float:left;background-color:#007ea5;color:#fff;text-align:center;padding:40px 0}
+.fs-logos{width:100%;float:left;background-color:#007ea5;color:#fff;text-align:center;padding:40px 10px}
 .footlogos{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;float:left}
 .footlogos a{display:inline-block;margin:0}
 .footlogos a img{width:100%}
@@ -1382,9 +1384,9 @@ section.brown.home{padding:100px 0 80px 0;clear:both}
 .btn.left{float:left}
 .special-wrap{width:90%;margin:0 auto}
 .special-widget{background-color:#fff;border-radius:0 0 10px 10px;width:100%;float:left;padding:0 20px 20px 20px;margin:20px auto 40px auto;-webkit-box-shadow:-2px 5px 5px -4px rgba(0,0,0,0.5);box-shadow:-2px 5px 5px -4px rgba(0,0,0,0.5)}
-.special-widget .blue-title{background-color:#007ea5;color:#fff1ab;font-family:"windsor-bold",sans-serif;font-size:30px;position:absolute;top:-20px;left:-20px;padding:20px;border-radius:10px;width:32%;-webkit-transform:rotate(-5deg);transform:rotate(-5deg);line-height:1;text-transform:uppercase;letter-spacing:3px}
+.special-widget .blue-title{background-color:#007ea5;color:#fff1ab;font-family:"windsor-bold",sans-serif;font-size:26px;position:absolute;top:-20px;left:-20px;padding:10px;border-radius:10px;width:32%;-webkit-transform:rotate(-5deg);transform:rotate(-5deg);line-height:1;text-transform:uppercase;letter-spacing:3px}
 .special-widget .right{width:98%;float:right;position:relative;background-color:#b5e0dc;color:#007ea5;margin-top:-15px;padding-top:20px;border-radius:0 0 10px 10px}
-.special-widget .right .right-right{width:65%;float:right}
+.special-widget .right .right-right{width:65%;float:right;padding-right:10px}
 @media screen and (min-width:600px){#cboxTitle{position:absolute;top:0;left:0;text-align:left;width:20%;font-weight:bold;color:#fff;padding:8% 2% 8% 2%;line-height:1.3;font-size:20px}
 .burger{display:none}
 nav.mobilemenu{display:none}
@@ -1394,13 +1396,16 @@ header.site-header .order-rez-wrap.desk{display:block;position:absolute;top:0;ri
 header.site-header .order-rez-wrap.mobile{display:none}
 header.site-header .order-n-delivery{float:right;margin-left:10px}
 header.site-header .dropdown{position:absolute;top:25px;right:0;width:300px}
+.foot-addy{padding:10px 0}
 .foot-addy .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.social{margin-left:20px}
+.social{margin-left:20px;padding:0}
+.fs-logos{padding:40px 0}
 nav.main-navigation .desktop{display:block;width:100%}
 .special-wrap{width:80%}
 }@media(min-width:667px){nav.mobilemenu{padding:120px 90px 70px 90px}
 }@media(min-width:900px){main.home{min-height:500px}
 nav.main-navigation{width:650px;margin-top:20px}
+.special-widget .blue-title{padding:20px;font-size:30px}
 }@media(min-width:1200px){.logo,h1.logo{width:325px}
 .logo a,h1.logo a{width:325px}
 .footlogos{width:50%;margin:0 auto;float:none}
