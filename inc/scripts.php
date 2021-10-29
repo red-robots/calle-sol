@@ -19,6 +19,13 @@ function bellaworks_scripts() {
 		);
 
 	wp_enqueue_script( 
+			'bellaworks-colorbox', 
+			get_template_directory_uri() . '/assets/js/vendors/colorbox.js', 
+			array(), '20120206', 
+			true 
+		);
+
+	wp_enqueue_script( 
 			'bellaworks-custom', 
 			get_template_directory_uri() . '/assets/js/custom.js', 
 			array(), '20120206', 
