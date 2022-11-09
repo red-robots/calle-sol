@@ -1389,6 +1389,9 @@ section.brown.home{padding:100px 0 80px 0;clear:both}
 .special-widget .blue-title{background-color:#007ea5;color:#fff1ab;font-family:"windsor-bold",sans-serif;font-size:26px;position:absolute;top:-20px;left:-20px;padding:10px;border-radius:10px;width:32%;-webkit-transform:rotate(-5deg);transform:rotate(-5deg);line-height:1;text-transform:uppercase;letter-spacing:3px}
 .special-widget .right{width:98%;float:right;position:relative;background-color:#b5e0dc;color:#007ea5;margin-top:-15px;padding-top:20px;border-radius:0 0 10px 10px}
 .special-widget .right .right-right{width:65%;float:right;padding-right:10px}
+.rewards{width:100%;float:left;padding-bottom:30px;text-align:center}
+.rewards .reward{display:inline-block;margin:0 10px}
+.rewards .reward a{color:#fff;padding:10px;display:block}
 @media screen and (min-width:600px){.burger{display:none}
 nav.mobilemenu{display:none}
 }@media(min-width:600px){.logo,h1.logo{float:left;margin:0}

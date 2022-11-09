@@ -571,3 +571,18 @@ box-shadow: -2px 5px 5px -4px rgba(0,0,0,0.5);
 		}
 	}
 }
+.rewards {
+	width: 100%;
+	float: left;
+	padding-bottom: 30px;
+	text-align: center;
+	.reward {
+		display: inline-block;
+		margin: 0 10px;
+		a {
+			color: #fff;
+			padding: 10px;
+			display: block;
+		}
+	}
+}

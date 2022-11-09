@@ -47,6 +47,14 @@
 
 			<div class="footcol fcol4 fs-logos">
 				<div class="inner">
+					<div class="rewards">
+						<div class="reward">
+							<a target="_blank" href="https://www.toasttab.com/calle-sol-1205-thomas-ave/rewardsSignup">Rewards Signup</a>
+						</div>
+						<div class="reward">
+							<a target="_blank" href="https://www.toasttab.com/calle-sol-1205-thomas-ave/rewards">Check Rewards</a>
+						</div>
+					</div>
 					<div class="foot-message">
 						<?php echo $fMessage; ?>
 					</div>
