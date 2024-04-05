@@ -270,6 +270,12 @@ nav.mobilemenu {
   	font-weight: bold;
   	text-decoration: none;
   }
+  ul.sub-menu {
+    margin: 20px 0 0 20px;
+    li a {
+      font-size: 20px;
+    }
+  }
   &.show {
     @include transform(translateX(0px));
     
