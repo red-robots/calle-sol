@@ -1372,7 +1372,12 @@ footer.site-footer{width:100%;clear:both}
 nav.main-navigation{width:50%;float:right;font-family:"stratum",sans-serif;font-weight:bold;position:relative;z-index:1000}
 nav.main-navigation .desktop{display:none}
 nav.main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+nav.main-navigation ul.sub-menu{height:0;overflow:hidden;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:absolute;top:100%;-webkit-transition:all ease .4s;transition:all ease .4s;margin:0}
+nav.main-navigation ul.sub-menu li{display:block;width:100%;min-width:200px;margin:0}
+nav.main-navigation ul.sub-menu li a{padding:10px 25px}
+nav.main-navigation ul.sub-menu li a:hover{-webkit-box-shadow:0 2px 28px 6px rgba(255,255,255,0);box-shadow:0 2px 28px 6px rgba(255,255,255,0)}
 nav.main-navigation li{width:auto;display:inline-block;margin:0 10px;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;text-transform:uppercase;font-size:14px}
+nav.main-navigation li:hover ul.sub-menu{height:auto;padding:20px 0}
 nav.main-navigation li a{text-decoration:none;color:#007ea5;font-weight:bold;padding:10px;display:block;-webkit-transition:all ease .3s;transition:all ease .3s}
 nav.main-navigation li a:hover{-webkit-box-shadow:0 2px 28px 6px rgba(255,255,255,0.96);box-shadow:0 2px 28px 6px rgba(255,255,255,0.96)}
 section.brown{width:100%;float:left;background-image:url(images/brown-background.jpg);background-repeat:no-repeat;background-size:cover}
