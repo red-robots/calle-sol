@@ -1339,13 +1339,19 @@ body{font-family:"futura-pt",sans-serif;background-image:url(images/header-backg
 .center{text-align:center}
 header.site-header{width:100%;position:relative;float:left}
 header.site-header .order-rez-wrap.desk{display:none}
+header.site-header .order-rez-wrap.desk .drop.padding{padding:15px 0}
 header.site-header .order-rez-wrap.mobile{margin:20px auto;display:inline-block;width:100%}
+header.site-header .order-rez-wrap.mobile .drop.padding a{padding:15px 0}
+header.site-header .order-rez-wrap.mobile .drop .img{width:50px;margin-right:10px}
+header.site-header .order-rez-wrap.mobile .drop .img img{width:100%}
+header.site-header .order-rez-wrap.mobile .drop a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:#f24c2e;color:#fff;text-decoration:none;margin-bottom:5px}
+header.site-header .order-rez-wrap.mobile .drop .tesxt{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 header.site-header .order-rez-wrap.mobile .center{width:100%;float:left;margin-bottom:20px}
 header.site-header .order-n-delivery{width:auto;margin-bottom:10px;font-family:"windsor-bold",sans-serif;letter-spacing:1px;position:relative}
 header.site-header .order-n-delivery a.first{background-color:#f24c2e;color:#fff;padding:8px 20px;text-align:center;border-radius:5px;text-transform:uppercase;text-decoration:none;margin-bottom:10px;-webkit-transition:all ease .2s;transition:all ease .2s}
 header.site-header .order-n-delivery a.first:hover{-webkit-box-shadow:0 2px 28px 6px rgba(255,255,255,0.96);box-shadow:0 2px 28px 6px rgba(255,255,255,0.96);border-radius:0}
 header.site-header .order-n-delivery:hover .dropdown{max-height:300px;padding:10px}
-header.site-header .dropdown{max-height:0;-webkit-transition:all ease .2s;transition:all ease .2s;overflow:hidden;background-color:#f24c2e;width:auto;z-index:100000;padding:0}
+header.site-header .dropdown{max-height:0;-webkit-transition:all ease .2s;transition:all ease .2s;overflow:hidden;background-color:#f24c2e;width:auto;z-index:100000;visibility:hidden;padding:0}
 header.site-header .dropdown .drop a{background-color:rgba(255,255,255,0);-webkit-transition:all ease .2s;transition:all ease .2s;color:#fff;text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;justify-contents:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-bottom:1px solid rgba(255,255,255,0.4)}
 header.site-header .dropdown .drop a:hover{background-color:rgba(255,255,255,0.1)}
 header.site-header .dropdown .img{width:30%}
@@ -1363,8 +1369,8 @@ article.page header.entry-header{font-family:"windsor",sans-serif;text-transform
 footer.site-footer{width:100%;clear:both}
 .foot-addy{width:100%;float:left;text-align:center;background-color:#fff1ab;padding:10px;color:#007ea5;font-size:18px}
 .foot-addy .address{word-break:keep-all}
-.social{padding:10px 0}
-.social a{color:#007ea5;text-decoration:none;font-size:25px;margin:0 10px}
+.social{padding:10px 0 30px 0 !important}
+.social a{color:#fff;text-decoration:none;font-size:25px;margin:0 10px}
 .foot-message{font-size:14px;width:100%;float:left;padding:0 0 20px 0}
 .fs-logos{width:100%;float:left;background-color:#007ea5;color:#fff;text-align:center;padding:40px 10px}
 .footlogos{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;float:left}
@@ -1406,7 +1412,8 @@ header.site-header .wrapper{padding:20px 0 0 0}
 header.site-header .order-rez-wrap.desk{display:block;position:absolute;top:0;right:0;border-radius:0 0 5px 5px;width:50%}
 header.site-header .order-rez-wrap.mobile{display:none}
 header.site-header .order-n-delivery{float:right;margin-left:10px}
-header.site-header .dropdown{position:absolute;top:25px;right:0;width:300px}
+header.site-header .dropdown{position:absolute;top:25px;right:0;width:300px;visibility:visible}
+header.site-header .dropdown .drop .mobile{display:none}
 .foot-addy{padding:10px 0}
 .foot-addy .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .social{margin-left:20px;padding:0}

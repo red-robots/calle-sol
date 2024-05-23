@@ -21,40 +21,41 @@
 					<div class="address">
 						<?php echo $address; ?>
 					</div>
-					<div class="social">
-						<div class="flex">
-							<?php if( $facebook ) {?>
-								<a href="<?php echo $facebook; ?>">
-									<i class="fab fa-facebook-square"></i>
-								</a>
-								<?php } ?>
-							<?php if( $twitter ) {?>
-								<a href="<?php echo $twitter; ?>">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<?php } ?>
-							<?php if( $instagram ) {?>
-								<a href="<?php echo $instagram; ?>">
-									<i class="fab fa-instagram"></i>
-								</a>
-								<?php } ?>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 
 				
 
 			<div class="footcol fcol4 fs-logos">
+				<div class="social">
+					<div class="flex">
+						<?php if( $facebook ) {?>
+							<a href="<?php echo $facebook; ?>">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+							<?php } ?>
+						<?php if( $twitter ) {?>
+							<a href="<?php echo $twitter; ?>">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<?php } ?>
+						<?php if( $instagram ) {?>
+							<a href="<?php echo $instagram; ?>">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<?php } ?>
+					</div>
+				</div>
 				<div class="inner">
-					<div class="rewards">
+					<!-- <div class="rewards">
 						<div class="reward">
 							<a target="_blank" href="https://www.toasttab.com/calle-sol-1205-thomas-ave/rewardsSignup">Rewards Signup</a>
 						</div>
 						<div class="reward">
 							<a target="_blank" href="https://www.toasttab.com/calle-sol-1205-thomas-ave/rewards">Check Rewards</a>
 						</div>
-					</div>
+					</div> -->
 					<div class="foot-message">
 						<?php echo $fMessage; ?>
 					</div>

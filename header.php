@@ -23,6 +23,7 @@ $ordDeliText = get_field('order_text', 'option');
 $rezLink = get_field('reservations_link', 'option');
 $rezText = get_field('reservations_text', 'option');
 $order = get_field('order', 'option');
+$reservations = get_field('reservations', 'option');
 
 // echo '<pre>';
 // print_r($order);
@@ -73,6 +74,7 @@ $btnLink = get_field('button_link', 'option');
 						</a>
 						<div class="dropdown">
 							<?php foreach( $order as $o ) { ?>
+								
 								<div class="drop">
 									<a href="<?php echo $o['link']; ?>">
 										<div class="img">
@@ -86,12 +88,31 @@ $btnLink = get_field('button_link', 'option');
 					</div>
 				<?php } ?>
 
+				<?php if( $reservations ) { ?>
+					<div class="order-n-delivery ">
+						<a class="first" href="#">
+							Reservations
+							
+						</a>
+						<div class="dropdown ">
+							<?php foreach( $reservations as $r ) { ?>
+								
+								<div class="drop padding">
+									<a href="<?php echo $r['link']['url']; ?>">
+										<div class="tesxt"><?php echo $r['link']['title']; ?></div>
+									</a>
+								</div>
+							<?php } ?>
+						</div>
+					</div>
+				<?php } ?>
+
 				<?php if( $rezLink ) { ?>
-					<div class="order-n-delivery">
+					<!-- <div class="order-n-delivery">
 						<a class="first" href="<?php echo $rezLink; ?>" id="resyButton-EzBNcMKpKKfTgMDkZLr6S" >
 							<?php echo $rezText; ?>
 						</a>
-					</div>
+					</div> -->
 				<?php } ?>
 			</div>
 			
@@ -125,10 +146,10 @@ $btnLink = get_field('button_link', 'option');
 				<?php if( $order ) { ?>
 					<div class="center">
 						<div class="order-n-delivery ">
-							<a class="first" href="#">
+							<!-- <a class="first" href="#">
 								Order
-							</a>
-							<div class="dropdown">
+							</a> -->
+							
 								<?php foreach( $order as $o ) { ?>
 									<div class="drop">
 										<a href="<?php echo $o['link']; ?>">
@@ -139,7 +160,14 @@ $btnLink = get_field('button_link', 'option');
 										</a>
 									</div>
 								<?php } ?>
-							</div>
+								<?php foreach( $reservations as $r ) { ?>
+									<div class="drop padding">
+										<a href="<?php echo $r['link']['url']; ?>">
+											<div class="tesxt"><?php echo $r['link']['title']; ?></div>
+										</a>
+									</div>
+								<?php } ?>
+							
 						</div>
 					</div>
 				<?php } ?>
