@@ -101,7 +101,7 @@ if( $active[0] == 'turnon' && is_front_page() ) {
 			// Popup
 			$.colorbox({
 				inline:true, href:".ajax",
-				maxWidth:'95%'
+				maxWidth:'80%'
 			});
 		});
 	</script>
